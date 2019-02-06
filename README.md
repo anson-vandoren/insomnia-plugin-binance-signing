@@ -1,4 +1,4 @@
-###Binance request signing for Insomnia
+### Binance request signing for Insomnia
 
 All private Binance API calls require adding a timestamp and then signing the request (HMAC-SHA256) prior to submitting. Insomnia doesn't have (as far as I can find) a built-in way to do this.
 

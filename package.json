@@ -1,6 +1,6 @@
 {
   "name": "insomnia-plugin-binance-signing",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Anson VanDoren <anson.vandoren@gmail.com>",
   "description": "HMAC signing for Binance API",
   "license": "MIT",

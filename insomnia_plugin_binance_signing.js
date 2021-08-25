@@ -2,7 +2,11 @@
 
 const CryptoJS = require('crypto-js');
 
-const binanceUrl = 'https://api.binance.com';
+const binanceUrls = [
+  'https://api.binance.com',
+  'https://api.binance.us',
+  'https://testnet.binance.vision'
+];
 const recvWindow = 5000;
 
 function encodeURL(str) {
@@ -52,7 +56,7 @@ module.exports.requestHooks = [
       !req.hasOwnProperty('getUrl') ||
       req['getUrl'] == null ||
       req['getUrl'].constructor.name != 'Function' ||
-      !req.getUrl().startsWith(binanceUrl)
+      !binanceUrls.some((binanceUrl) => req.getUrl().startsWith(binanceUrl))
     ) {
       console.log('Not a Binance API URL');
       return;

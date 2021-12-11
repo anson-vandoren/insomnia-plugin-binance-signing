@@ -5,6 +5,7 @@ const CryptoJS = require('crypto-js');
 const binanceUrls = [
   'https://api.binance.com',
   'https://api.binance.us',
+  'https://api.binance.me',
   'https://testnet.binance.vision'
 ];
 const recvWindow = 5000;
